@@ -1,0 +1,453 @@
+:root {
+    --primary-color: #3498db;
+    --secondary-color: #2c3e50;
+    --light-color: #ecf0f1;
+    --dark-color: #2c3e50;
+    --success-color: #2ecc71;
+    --progress-color: #f39c12;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+}
+
+/* Кастомные стили для сохранения внешнего вида */
+.min-vh-90 {
+    min-height: 90vh;
+}
+
+.student-photo {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.hover-shadow {
+    transition: all 0.3s ease;
+}
+
+.hover-shadow:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15) !important;
+}
+
+/* Стили для заголовков секций */
+h2.text-center.position-relative::after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 4px;
+    background-color: var(--primary-color);
+    margin: 15px auto;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .student-photo {
+        width: 220px;
+        height: 220px;
+    }
+    
+    .display-4 {
+        font-size: 2rem;
+    }
+    
+    .fs-5 {
+        font-size: 1rem !important;
+    }
+}
+
+/* Стили для навигации */
+.navbar-nav .nav-link {
+    transition: color 0.3s;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+    color: var(--primary-color) !important;
+}
+
+/* Стили для прогресс-баров */
+.progress {
+    border-radius: 6px;
+}
+
+/* Медиазапросы для адаптивности */
+@media (max-width: 992px) {
+    .student-photo {
+        width: 250px;
+        height: 250px;
+    }
+    
+    .display-4 {
+        font-size: 2.5rem;
+    }
+    
+    .card-body {
+        padding: 1.5rem !important;
+    }
+    
+    .btn-lg {
+        padding: 0.75rem 1.5rem;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .student-photo {
+        width: 200px;
+        height: 200px;
+    }
+    
+    .display-4 {
+        font-size: 2rem;
+    }
+    
+    h2 {
+        font-size: 1.75rem;
+    }
+    
+    .fs-5 {
+        font-size: 1rem !important;
+    }
+    
+    .navbar-brand {
+        font-size: 1.1rem !important;
+    }
+    
+    .nav-link {
+        font-size: 0.9rem;
+        margin: 0.25rem 0 !important;
+    }
+    
+    .card-body {
+        padding: 1.25rem !important;
+    }
+    
+    .btn {
+        padding: 0.5rem 1rem;
+        font-size: 0.9rem;
+    }
+    
+    .progress {
+        height: 10px !important;
+    }
+    
+    .py-5 {
+        padding-top: 2rem !important;
+        padding-bottom: 2rem !important;
+    }
+    
+    .mb-4 {
+        margin-bottom: 1rem !important;
+    }
+    
+    .container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+
+@media (max-width: 576px) {
+    .student-photo {
+        width: 150px;
+        height: 150px;
+    }
+    
+    .display-4 {
+        font-size: 1.75rem;
+    }
+    
+    h2 {
+        font-size: 1.5rem;
+    }
+    
+    h3.card-title {
+        font-size: 1.25rem;
+    }
+    
+    .navbar-brand {
+        font-size: 1rem !important;
+    }
+    
+    .card {
+        margin-bottom: 1rem;
+    }
+    
+    .card-body {
+        padding: 1rem !important;
+    }
+    
+    .d-flex.gap-3 {
+        flex-direction: column;
+        gap: 0.5rem !important;
+    }
+    
+    .d-flex.gap-3 .btn {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .text-center .btn {
+        display: block;
+        width: 100%;
+        margin: 0.25rem 0;
+    }
+    
+    .col-lg-8, .col-lg-4 {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    
+    .py-5 {
+        padding-top: 1.5rem !important;
+        padding-bottom: 1.5rem !important;
+    }
+    
+    .mb-3 {
+        margin-bottom: 0.75rem !important;
+    }
+    
+    .mb-4 {
+        margin-bottom: 1rem !important;
+    }
+    
+    .modal-dialog {
+        margin: 0.5rem;
+        max-width: calc(100% - 1rem);
+    }
+    
+}
+
+
+@media (max-width: 375px) {
+    .student-photo {
+        width: 120px;
+        height: 120px;
+    }
+    
+    .display-4 {
+        font-size: 1.5rem;
+    }
+    
+    h2 {
+        font-size: 1.3rem;
+    }
+    
+    .container {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    
+    .btn {
+        font-size: 0.85rem;
+        padding: 0.4rem 0.8rem;
+    }
+}
+
+
+
+@media (min-resolution: 192dpi) {
+    .student-photo {
+        image-rendering: -webkit-optimize-contrast;
+        image-rendering: crisp-edges;
+    }
+}
+
+
+
+
+.grid-container {
+    margin-bottom: 4rem;
+}
+
+.grid-benefits {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    height: 100%;
+}
+
+.benefit-item {
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    height: 100%;
+}
+
+.benefit-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.benefit-icon {
+    font-size: 1.5rem;
+    transition: all 0.3s ease;
+}
+
+.benefit-item:hover .benefit-icon {
+    transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+    .grid-benefits {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    
+    .benefit-item {
+        padding: 1.5rem !important;
+    }
+    
+    .benefit-icon {
+        width: 50px !important;
+        height: 50px !important;
+    }
+}
+
+@media (max-width: 576px) {
+    .grid-container {
+        margin-bottom: 2rem;
+    }
+    
+    .benefit-item {
+        padding: 1rem !important;
+    }
+    
+    .form-control {
+        padding: 0.75rem !important;
+    }
+    
+    .btn {
+        padding: 0.75rem !important;
+    }
+}
+
+
+.modal-content {
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+@media (max-width: 576px) {
+    .modal-dialog {
+        margin: 0.5rem;
+    }
+    
+    .modal-content {
+        border-radius: 10px;
+    }
+}
+        
+
+/* Стили для асимметричной галереи */
+.gallery-grid {
+    display: grid;
+    gap: 1.5rem;
+    grid-auto-rows: 200px;
+    margin-bottom: 3rem;
+}
+
+/* Десктопная асимметричная сетка */
+@media (min-width: 992px) {
+    .gallery-grid {
+        grid-template-columns: repeat(4, 1fr);
+        grid-auto-rows: 250px;
+    }
+    
+    .gallery-item-large {
+        grid-column: span 2;
+        grid-row: span 2;
+    }
+    
+    .gallery-item-wide {
+        grid-column: span 2;
+    }
+    
+    .gallery-item-tall {
+        grid-row: span 2;
+    }
+}
+
+/* Планшетная версия */
+@media (min-width: 768px) and (max-width: 991px) {
+    .gallery-grid {
+        grid-template-columns: repeat(3, 1fr);
+        grid-auto-rows: 200px;
+    }
+    
+    .gallery-item-large,
+    .gallery-item-wide {
+        grid-column: span 2;
+    }
+    
+    .gallery-item-tall {
+        grid-row: span 2;
+    }
+}
+
+/* Мобильная версия */
+@media (max-width: 767px) {
+    .gallery-grid {
+        grid-template-columns: 1fr;
+        grid-auto-rows: 300px;
+        gap: 1rem;
+    }
+    
+    .gallery-item-large,
+    .gallery-item-wide,
+    .gallery-item-tall {
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+}
+
+/* Стили для карточек галереи */
+.gallery-item {
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.gallery-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.gallery-item:hover .gallery-img {
+    transform: scale(1.05);
+}
+
+.gallery-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background:  rgba(0,0,0,0.8);
+    color: white;
+    padding: 1.5rem;
+    transform: translateY(100%);
+    transition: transform 0.3s ease;
+}
+
+.gallery-item:hover .gallery-overlay {
+    transform: translateY(0);
+}
+
+.gallery-title {
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+}
+
+.gallery-category {
+    font-size: 0.9rem;
+    opacity: 0.9;
+}

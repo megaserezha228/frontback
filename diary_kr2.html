@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Учебный дневник</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="styles_kr2.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Навигация -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold fs-4" href="index_kr2.html">Портфолио</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link fw-medium mx-2" href="index_kr2.html">Главная</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-medium mx-2" href="projects_kr2.html">Проекты</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active fw-medium mx-2" href="diary_kr2.html">Дневник</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-medium mx-2" href="contacts_kr2.html">Контакты</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Учебный дневник -->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="text-center fw-bold text-dark mb-4 position-relative">Мой учебный прогресс</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-8" id="progress-list">
+                    <!-- Существующие записи с кнопками удаления -->
+                    <div class="card border-0 shadow-sm mb-3 position-relative border-start border-primary border-4">
+                        <div class="card-body p-4">
+                            <button class="btn btn-sm position-absolute top-0 end-0 m-3 bg-transparent border-0 text-primary opacity-75" 
+                                    onclick="deleteRecord(this)" title="Удалить запись" style="width: 35px; height: 35px;">
+                                ×
+                            </button>
+                            <div class="fw-semibold text-dark mb-2">21 сентября</div>
+                            <p class="mb-0">
+                                <span class="fw-bold me-2">✓</span>
+                                <span class="text-success fw-semibold">JavaScript основы</span>
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="card border-0 shadow-sm mb-3 position-relative border-start border-primary border-4">
+                        <div class="card-body p-4">
+                            <button class="btn btn-sm position-absolute top-0 end-0 m-3 bg-transparent border-0 text-primary opacity-75" 
+                                    onclick="deleteRecord(this)" title="Удалить запись" style="width: 35px; height: 35px;">
+                                ×
+                            </button>
+                            <div class="fw-semibold text-dark mb-2">2 октября</div>
+                            <p class="mb-0">
+                                <span class="fw-bold me-2">✓</span>
+                                <span class="text-success fw-semibold">Вёрстка макета сайта</span>
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="card border-0 shadow-sm mb-3 position-relative border-start border-primary border-4">
+                        <div class="card-body p-4">
+                            <button class="btn btn-sm position-absolute top-0 end-0 m-3 bg-transparent border-0 text-primary opacity-75" 
+                                    onclick="deleteRecord(this)" title="Удалить запись" style="width: 35px; height: 35px;">
+                                ×
+                            </button>
+                            <div class="fw-semibold text-dark mb-2">1 декабря</div>
+                            <p class="mb-0">
+                                <span class="fw-bold me-2">⟳</span>
+                                <span class="text-warning fw-semibold">Работа с формами</span>
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="card border-0 shadow-sm mb-3 position-relative border-start border-primary border-4">
+                        <div class="card-body p-4">
+                            <button class="btn btn-sm position-absolute top-0 end-0 m-3 bg-transparent border-0 text-primary opacity-75" 
+                                    onclick="deleteRecord(this)" title="Удалить запись" style="width: 35px; height: 35px;">
+                                ×
+                            </button>
+                            <div class="fw-semibold text-dark mb-2">5 декабря</div>
+                            <p class="mb-0">
+                                <span class="fw-bold me-2">⟳</span>
+                                <span class="text-warning fw-semibold">Адаптивный дизайн</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Текущие курсы -->
+    <section class="bg-light py-5">
+        <div class="container">
+            <h2 class="text-center fw-bold text-dark mb-4 position-relative">Текущие курсы</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="card border-0 shadow-sm mb-4">
+                        <div class="card-body p-4">
+                            <h4 class="fw-semibold text-dark mb-3">Веб-разработка</h4>
+                            <div class="progress mb-2" style="height: 12px;">
+                                <div class="progress-bar" role="progressbar" style="width: 90%"></div>
+                            </div>
+                            <div class="text-end fw-semibold text-dark">90%</div>
+                        </div>
+                    </div>
+                    
+                    <div class="card border-0 shadow-sm mb-4">
+                        <div class="card-body p-4">
+                            <h4 class="fw-semibold text-dark mb-3">JavaScript</h4>
+                            <div class="progress mb-2" style="height: 12px;">
+                                <div class="progress-bar" role="progressbar" style="width: 70%"></div>
+                            </div>
+                            <div class="text-end fw-semibold text-dark">70%</div>
+                        </div>
+                    </div>
+                    
+                    <div class="card border-0 shadow-sm mb-4">
+                        <div class="card-body p-4">
+                            <h4 class="fw-semibold text-dark mb-3">React</h4>
+                            <div class="progress mb-2" style="height: 12px;">
+                                <div class="progress-bar" role="progressbar" style="width: 50%"></div>
+                            </div>
+                            <div class="text-end fw-semibold text-dark">50%</div>
+                        </div>
+                    </div>
+                    
+                    <div class="text-center">
+                        <button class="btn btn-primary px-4 py-2 rounded-pill" data-bs-toggle="modal" data-bs-target="#addRecordModal">
+                            Добавить запись
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Модальное окно -->
+    <div class="modal fade" id="addRecordModal" tabindex="-1" aria-labelledby="addRecordModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header bg-dark text-white">
+                    <h5 class="modal-title" id="addRecordModalLabel">Добавить новую запись</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="addRecordForm">
+                        <div class="mb-3">
+                            <label for="recordDate" class="form-label fw-semibold">Дата</label>
+                            <input type="date" class="form-control border-2 rounded-3 p-3" id="recordDate" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="recordTitle" class="form-label fw-semibold">Название задачи</label>
+                            <input type="text" class="form-control border-2 rounded-3 p-3" id="recordTitle" placeholder="Введите название задачи" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="recordStatus" class="form-label fw-semibold">Статус</label>
+                            <select class="form-select border-2 rounded-3 p-3" id="recordStatus" required>
+                                <option value="">Выберите статус</option>
+                                <option value="completed">Выполнено</option>
+                                <option value="in-progress">В процессе</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="recordDescription" class="form-label fw-semibold">Описание (необязательно)</label>
+                            <textarea class="form-control border-2 rounded-3" id="recordDescription" rows="3" placeholder="Дополнительное описание..."></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer border-0">
+                    <button type="button" class="btn btn-secondary rounded-pill px-4" data-bs-dismiss="modal">Отмена</button>
+                    <button type="button" class="btn btn-primary rounded-pill px-4" onclick="addNewRecord()">Сохранить запись</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Футер -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <p class="text-center mb-0">&copy; 2025 Портфолио студента-разработчика</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS и зависимости -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Функция для удаления записи
+        function deleteRecord(button) {
+            if (confirm('Вы уверены, что хотите удалить эту запись?')) {
+                const progressItem = button.closest('.card');
+                if (progressItem) {
+                    // Добавляем анимацию исчезновения
+                    progressItem.style.transition = 'all 0.3s ease';
+                    progressItem.style.opacity = '0';
+                    progressItem.style.transform = 'translateX(-100px)';
+                    progressItem.style.overflow = 'hidden';
+                    
+                    // Удаляем элемент после анимации
+                    setTimeout(() => {
+                        progressItem.remove();
+                    }, 300);
+                }
+            }
+        }
+
+        // Функция для добавления новой записи
+        function addNewRecord() {
+            // Получаем значения из формы
+            const date = document.getElementById('recordDate').value;
+            const title = document.getElementById('recordTitle').value;
+            const status = document.getElementById('recordStatus').value;
+            const description = document.getElementById('recordDescription').value;
+            
+            // Проверяем заполнение обязательных полей
+            if (!date || !title || !status) {
+                alert('Пожалуйста, заполните все обязательные поля');
+                return;
+            }
+            
+            // Форматируем дату
+            const formattedDate = formatDate(date);
+            
+            // Создаем HTML для новой записи
+            const statusIcon = status === 'completed' ? '✓' : '⟳';
+            const statusClass = status === 'completed' ? 'text-success' : 'text-warning';
+            
+            const newRecordHTML = `
+                <div class="card border-0 shadow-sm mb-3 position-relative border-start border-primary border-4">
+                    <div class="card-body p-4">
+                        <button class="btn btn-sm position-absolute top-0 end-0 m-3 bg-transparent border-0 text-primary opacity-75" 
+                                onclick="deleteRecord(this)" title="Удалить запись" style="width: 35px; height: 35px;">
+                            ×
+                        </button>
+                        <div class="fw-semibold text-dark mb-2">${formattedDate}</div>
+                        <p class="mb-0">
+                            <span class="fw-bold me-2">${statusIcon}</span>
+                            <span class="${statusClass} fw-semibold">${title}</span>
+                        </p>
+                        ${description ? `<p class="text-muted mt-2 mb-0">${description}</p>` : ''}
+                    </div>
+                </div>
+            `;
+            
+            // Добавляем новую запись в начало списка
+            const progressList = document.getElementById('progress-list');
+            progressList.insertAdjacentHTML('afterbegin', newRecordHTML);
+            
+            // Закрываем модальное окно
+            const modal = bootstrap.Modal.getInstance(document.getElementById('addRecordModal'));
+            modal.hide();
+            
+            // Очищаем форму
+            document.getElementById('addRecordForm').reset();
+            
+            // Показываем уведомление об успехе
+            alert('Запись успешно добавлена!');
+        }
+        
+        // Функция для форматирования даты
+        function formatDate(dateString) {
+            const date = new Date(dateString);
+            const options = { day: 'numeric', month: 'long' };
+            return date.toLocaleDateString('ru-RU', options);
+        }
+        
+        // Устанавливаем сегодняшнюю дату по умолчанию
+        document.addEventListener('DOMContentLoaded', function() {
+            const today = new Date().toISOString().split('T')[0];
+            document.getElementById('recordDate').value = today;
+        });
+    </script>
+</body>
+</html>

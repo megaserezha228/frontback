@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Портфолио студента</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="styles_kr2.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Навигация -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold fs-4" href="index_kr2.html">Портфолио</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active fw-medium mx-2" href="#">Главная</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-medium mx-2" href="projects_kr2.html">Проекты</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-medium mx-2" href="diary_kr2.html">Дневник</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-medium mx-2" href="contacts_kr2.html">Контакты</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Главная секция -->
+    <section class="min-vh-90 d-flex align-items-center py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <img src="my_photo.webp" alt="Фото студента" class="student-photo rounded-circle border-5 border-primary shadow">
+                    <h1 class="display-4 fw-bold text-dark mb-3">Грибанов Сергей</h1>
+                    <p class="fs-5 text-muted mb-4">Привет! Я студент группы ЭФБО-06-24<br>Увлекаюсь веб-разработкой</p>
+                    <a href="#" class="btn btn-primary btn-lg px-4 py-2 rounded-pill">Скачать резюме</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Навыки -->
+    <section class="bg-light py-5">
+        <div class="container">
+            <h2 class="text-center fw-bold text-dark mb-4 position-relative">Мои навыки</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <div class="mb-4">
+                        <div class="fw-semibold mb-2">HTML/CSS</div>
+                        <div class="progress" style="height: 12px;">
+                            <div class="progress-bar" role="progressbar" style="width: 90%"></div>
+                        </div>
+                    </div>
+                    <div class="mb-4">
+                        <div class="fw-semibold mb-2">JavaScript</div>
+                        <div class="progress" style="height: 12px;">
+                            <div class="progress-bar" role="progressbar" style="width: 80%"></div>
+                        </div>
+                    </div>
+                    <div class="mb-4">
+                        <div class="fw-semibold mb-2">Bootstrap</div>
+                        <div class="progress" style="height: 12px;">
+                            <div class="progress-bar" role="progressbar" style="width: 85%"></div>
+                        </div>
+                    </div>
+                    <div class="mb-4">
+                        <div class="fw-semibold mb-2">React</div>
+                        <div class="progress" style="height: 12px;">
+                            <div class="progress-bar" role="progressbar" style="width: 60%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Лучшие проекты -->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="text-center fw-bold text-dark mb-4 position-relative">Лучшие проекты</h2>
+            <div class="row">
+                <!-- Проект 1 -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card border-0 shadow-sm h-100 hover-shadow">
+                        <div class="card-body p-4">
+                            <h3 class="card-title fw-semibold text-dark mb-3">Веб-приложение для учета задач</h3>
+                            <p class="card-text text-muted mb-3">Разработка полнофункционального веб-приложения для управления задачами с возможностью совместной работы и уведомлениями.</p>
+                            <div class="d-flex flex-wrap gap-2 mb-3">
+                                <span class="badge bg-light text-dark px-3 py-2">React</span>
+                                <span class="badge bg-light text-dark px-3 py-2">Node.js</span>
+                                <span class="badge bg-light text-dark px-3 py-2">MongoDB</span>
+                            </div>
+                            <div class="d-flex gap-3">
+                                <a href="#" class="btn btn-primary px-3 py-2 rounded-pill">Демо</a>
+                                <a href="#" class="btn btn-outline-primary px-3 py-2 rounded-pill">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Проект 2 -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card border-0 shadow-sm h-100 hover-shadow">
+                        <div class="card-body p-4">
+                            <h3 class="card-title fw-semibold text-dark mb-3">Мобильное приложение для фитнеса</h3>
+                            <p class="card-text text-muted mb-3">Кроссплатформенное мобильное приложение с трекингом тренировок, планированием питания и мотивационными уведомлениями.</p>
+                            <div class="d-flex flex-wrap gap-2 mb-3">
+                                <span class="badge bg-light text-dark px-3 py-2">React Native</span>
+                                <span class="badge bg-light text-dark px-3 py-2">Firebase</span>
+                                <span class="badge bg-light text-dark px-3 py-2">Redux</span>
+                            </div>
+                            <div class="d-flex gap-3">
+                                <a href="#" class="btn btn-primary px-3 py-2 rounded-pill">Демо</a>
+                                <a href="#" class="btn btn-outline-primary px-3 py-2 rounded-pill">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Проект 3 -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card border-0 shadow-sm h-100 hover-shadow">
+                        <div class="card-body p-4">
+                            <h3 class="card-title fw-semibold text-dark mb-3">Платформа для онлайн-курсов</h3>
+                            <p class="card-text text-muted mb-3">Комплексная образовательная платформа с видеолекциями, интерактивными заданиями и системой проверки работ.</p>
+                            <div class="d-flex flex-wrap gap-2 mb-3">
+                                <span class="badge bg-light text-dark px-3 py-2">Vue.js</span>
+                                <span class="badge bg-light text-dark px-3 py-2">Django</span>
+                                <span class="badge bg-light text-dark px-3 py-2">PostgreSQL</span>
+                            </div>
+                            <div class="d-flex gap-3">
+                                <a href="#" class="btn btn-primary px-3 py-2 rounded-pill">Демо</a>
+                                <a href="#" class="btn btn-outline-primary px-3 py-2 rounded-pill">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Футер -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <p class="text-center mb-0">&copy; 2025 Портфолио студента-разработчика</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS и зависимости -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
